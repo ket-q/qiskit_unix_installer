@@ -16,3 +16,11 @@ cd qiskit_unix_installer
 # 3. Run the setup script
 ./setup.sh
 ```
+
+## Uninstallation
+
+If you ever need to completely remove the virtual environment and start fresh, run:
+
+```bash
+./uninstall.sh
+```
