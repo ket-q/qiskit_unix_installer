@@ -14,7 +14,7 @@ git clone https://github.com/ket-q/qiskit_unix_installer
 cd qiskit_unix_installer
 
 # 3. Run the setup script
-./setup.sh
+bash setup.sh
 ```
 
 ## Uninstallation
@@ -22,5 +22,5 @@ cd qiskit_unix_installer
 If you ever need to completely remove the virtual environment and start fresh, run:
 
 ```bash
-./uninstall.sh
+bash uninstall.sh
 ```
