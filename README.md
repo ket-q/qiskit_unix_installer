@@ -1,6 +1,10 @@
 # Quantum Computing Environment Setup
 
-This repository contains the scripts needed to set up Qiskit for your quantum computer programming course. 
+> [!NOTE]
+> This repository is for Linux and macOS.
+> If you work on Windows, please use [QIWI](https://github.com/ket-q/qiskit_windows_installer).
+
+Scripts to set up Qiskit for your quantum computer programming course on Linux and macOS.
 
 ## Installation
 
