@@ -1,0 +1,6 @@
+# Build-time constraint for packages that are built from source.
+# Some dependencies are distributed only as source archives whose build
+# scripts still use pkg_resources, which newer setuptools releases no
+# longer include. Limiting setuptools in the build environment keeps
+# these builds working. Revisit when the package set changes.
+setuptools<81
