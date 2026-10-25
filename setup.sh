@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ------------------ Configuration (edit per semester) ------------------
-source "$(dirname "$0")/config.sh"
-# -----------------------------------------------------------------------
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/config/config.sh"
 
 VENV_DIR="$VENV_ROOT/$VENV_NAME"
 VENV_PY="$VENV_DIR/bin/python"
@@ -30,7 +29,7 @@ fi
 # 3. Install the requirements
 uv pip install \
     --python "$VENV_PY" \
-    --build-constraint <(echo "setuptools<81") \
+    --build-constraint "$SCRIPT_DIR/config/build-constraints.txt" \
     -r "$REQUIREMENTS"
 
 # 4. Register the Jupyter kernel for VS Code

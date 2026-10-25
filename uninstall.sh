@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# ---- Configuration (must match setup.sh) ------------------------------
-source "$(dirname "$0")/config.sh"
-# -----------------------------------------------------------------------
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "$SCRIPT_DIR/config/config.sh"
 
 VENV_DIR="$VENV_ROOT/$VENV_NAME"
 VENV_PY="$VENV_DIR/bin/python"
