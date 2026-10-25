@@ -3,4 +3,4 @@
 # scripts still use pkg_resources, which newer setuptools releases no
 # longer include. Limiting setuptools in the build environment keeps
 # these builds working. Revisit when the package set changes.
-BUILD_CONSTRAINT="setuptools<81"
+setuptools<81
